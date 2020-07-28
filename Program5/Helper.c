@@ -1,18 +1,21 @@
 #include "Header.h"
 
-////////////////////////////////////////////////
-// Function Name: Accept
-// Description: Accept one number from user and
-//				print that number of *
-// Input: Integer
-// Output: Void
+///////////////////////////////////////////////
+// Function Name: ChkEven
+// Description: Accept number from user and check
+//			   if it's Even or not.
+// Input: Interger
+// Output: Boolean
 // Author: Vivek Shrihari Doke
-// Date: 24 July 2020 
+// Date: 24 July 2020  
 ////////////////////////////////////////////////
 
-void Accept(int iNo) {
-	int iCnt=0;
-	for( ; iCnt<iNo; iCnt++) {
-		printf("*\n");
+BOOL ChkEven(int iNo) {
+	int iRes = iNo % 2;
+	if(iRes == FALSE) {
+		return FALSE;
+	}
+	else {
+		return TRUE;
 	}
 }

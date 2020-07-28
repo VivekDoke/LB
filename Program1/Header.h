@@ -1,3 +1,3 @@
 #include<stdio.h>
 
-int Divide(int, int);
+void Display(int);

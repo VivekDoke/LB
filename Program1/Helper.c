@@ -1,21 +1,18 @@
 #include "Header.h"
 
-///////////////////////////////////
-//
-// Function Name: Divide	 
-// Input: Integer, Integer
-// Output: Interger
-// Description: Divide two number
+/////////////////////////////////////////////////
+// Function Name: Display
+// Description: Accept one number from user and 
+//				print that number of * on screen
+// Input: Integer
+// Output: Void
 // Author: Vivek Shrihari Doke
-// Date: 25 July 2020
-//
-//////////////////////////////////
+// Date: 24 July 2020
+/////////////////////////////////////////////////
 
-int Divide(int iNo1, int iNo2) {
-	int iAns = 0;
-	if(iNo2 > iNo1) {
-		return -1;
+void Display(int iNo) {
+	int iCnt=0;
+	for( iCnt=0; iCnt<iNo; iCnt++) {
+		printf(" * ");
 	}
-	iAns = iNo1 / iNo2;
-	return iAns;
-} 
+}

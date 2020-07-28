@@ -1,6 +1,11 @@
 #include "Header.h"
 
 int main() {
-	Display();
+	int iValue = 0;
+	printf("Enter the number: ");
+	scanf("%d",&iValue);
+
+	Display(iValue);
+	
 	return 0;
 }

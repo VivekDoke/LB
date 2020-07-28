@@ -1,19 +1,15 @@
 #include "Header.h"
 
 int main() {
-	int iVal = 0;
-	BOOL bRet = FALSE;
+	int iValue = 0;
+	int iCount = 0;
 
 	printf("Enter number: ");
-	scanf("%d",&iVal);
+	scanf("%d", &iValue);
 
-	bRet = Check(iVal);
-
-	if(bRet == TRUE) {
-		printf("Divisble by 5\n");
-	}
-	else {
-		printf("Not Divisible by 5\n");
-	}
+	printf("Enter frequency: ");
+	scanf("%d", &iCount);
+	
+	Display(iValue, iCount);
 	return 0;
 }
