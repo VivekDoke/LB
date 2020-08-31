@@ -1,21 +1,23 @@
 #include "Header.h"
 
-///////////////////////////////////////////////
-// Function Name: ChkEven
-// Description: Accept number from user and check
-//			   if it's Even or not.
-// Input: Interger
-// Output: Boolean
-// Author: Vivek Shrihari Doke
-// Date: 24 July 2020  
-////////////////////////////////////////////////
+void StrCpyToggle(char *src, char* dest) {
+	if((src == NULL) || (dest == NULL)) {
+		printf("Error:\n");
+		return;
+	}
 
-BOOL ChkEven(int iNo) {
-	int iRes = iNo % 2;
-	if(iRes == FALSE) {
-		return FALSE;
+	while(*src != '\0') {
+		if((*src >= 'a') && (*src <= 'z')) {
+			*dest = *(src) - 32;
+		}
+		else if((*src >= 'A') && (*src <= 'Z')) {
+			*dest = *(src) + 32;
+		}
+		else {
+			*dest = *src;
+		}
+		*dest++;
+		*src++;
 	}
-	else {
-		return TRUE;
-	}
+	*dest = '\0';
 }

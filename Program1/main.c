@@ -1,11 +1,12 @@
 #include "Header.h"
 
 int main() {
-	int iValue = 0;
-	
-	printf("Enter number: ");
-	scanf("%d",&iValue);
+	char arr[30] = "Marvellous Python";
+	char brr[30];
 
-	Display(iValue);
+	StrCpyRev(arr, brr);
+
+	printf("%s\n",brr);
+	
 	return 0;
 }

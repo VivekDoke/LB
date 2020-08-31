@@ -1,11 +1,12 @@
 #include "Header.h"
 
 int main() {
-	int iValue = 0;
-	printf("Enter the number: ");
-	scanf("%d",&iValue);
+	char arr[30] = "    Vi    v e k D  o k e.. ";
+	char brr[30];
 
-	Display(iValue);
+	StrCpyX(arr, brr);
+
+	printf("%s\n",brr);
 	
 	return 0;
 }

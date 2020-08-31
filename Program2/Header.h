@@ -1,3 +1,3 @@
 #include<stdio.h>
 
-void Display( int iNo);
+void StrCpyX(char*, char*);

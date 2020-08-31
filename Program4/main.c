@@ -1,15 +1,12 @@
 #include "Header.h"
 
 int main() {
-	int iValue = 0;
-	int iCount = 0;
+	char arr[30] = "Vivek Doke.. Logic Building";
+	char brr[30];
 
-	printf("Enter number: ");
-	scanf("%d", &iValue);
+	StrCpySmall(arr, brr);
 
-	printf("Enter frequency: ");
-	scanf("%d", &iCount);
+	printf("%s\n",brr);
 	
-	Display(iValue, iCount);
 	return 0;
 }

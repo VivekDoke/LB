@@ -1,18 +1,19 @@
 #include "Header.h"
 
-///////////////////////////////////////////////
-// Function Name: Display
-// Description: Accept one number from user and
-//			   print that number of * on screen
-// Input: Integer
-// Output: Void
-// Author: Vivek Shrihari Doke
-// Date: 24 July 2020
-////////////////////////////////////////////////
-
-void Display(int iNo) {
-	while(iNo>0) {
-		printf(" * ");
-		iNo--;
+void StrCpyX(char *src, char* dest) {
+	if((src == NULL) || (dest == NULL)) {
+		printf("Error:\n");
+		return;
 	}
+
+	while(*src != '\0') {
+		if(*src == ' ') {
+			src++;
+			continue;
+		}
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
 }

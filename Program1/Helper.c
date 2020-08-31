@@ -1,18 +1,20 @@
 #include "Header.h"
 
-/////////////////////////////////////////////////
-// Function Name: Display
-// Description: Accept one number from user and 
-//				print that number of * on screen
-// Input: Integer
-// Output: Void
-// Author: Vivek Shrihari Doke
-// Date: 24 July 2020
-/////////////////////////////////////////////////
+void StrCpyRev(char *src, char* dest) {
 
-void Display(int iNo) {
-	int iCnt=0;
-	for( iCnt=0; iCnt<iNo; iCnt++) {
-		printf(" * ");
+	if((src == NULL) || (dest == NULL)) {
+		printf("Error: \n");
+		return;
 	}
+	int iLength = 0;
+	char* csrc = src;
+	while(*csrc != '\0') {
+		++iLength;
+		csrc++;
+	}
+	while(iLength >= 0) {
+		*++dest = *--csrc;
+		--iLength;
+	}
+	*dest = '\0';
 }

@@ -1,19 +1,12 @@
 #include "Header.h"
 
 int main() {
-	int iValue = 0;
-	BOOL bRet = FALSE;
+	char arr[30] = "Vivek Doke..";
+	char brr[30];
 
-	printf("Enter number: ");
-	scanf("%d",&iValue);
+	StrCpyToggle(arr, brr);
+
+	printf("%s\n",brr);
 	
-	bRet = ChkEven(iValue);
-
-	if(bRet == FALSE) {
-		printf("Number is Even\n");
-	}
-	else {
-		printf("Number is Odd\n");
-	}
 	return 0;
 }

@@ -1,3 +1,3 @@
 #include<stdio.h>
 
-void Display(int, int);
+void StrCpySmall(char*, char*);
